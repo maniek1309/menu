@@ -219,6 +219,5 @@ function toggleCartDisplay() {
 // Funkcja aktualizująca łączną cenę
 function updateTotalPrice() {
   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
-  console.log("Łączna cena produktów w koszyku: ", totalPrice.toFixed(2));
   return totalPrice.toFixed(2);
 }
